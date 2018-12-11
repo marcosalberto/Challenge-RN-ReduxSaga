@@ -1,8 +1,11 @@
 import { StyleSheet } from 'react-native'
+import { variables } from '../../config/styles'
 
 const styles = StyleSheet.create({
     detail: {
-        flex: 1
+        flex: 1,
+        paddingTop: 20,
+        backgroundColor: variables.primaryColor
     },
     header: {
         padding: 20,
@@ -45,6 +48,7 @@ const styles = StyleSheet.create({
         flex: 2,
         padding: 15,
         paddingTop: 20,
+        backgroundColor: '#FFF'
     },
     descriptionText: {
         fontSize: 14,
@@ -82,13 +86,16 @@ const styles = StyleSheet.create({
         lineHeight: 13,
         fontWeight: 'bold'
     },
-    saveButton: {
+    likeButton: {
         backgroundColor: '#DC4B5D',
         width: 36,
         height: 36,
         borderRadius: 100,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    dislikeButton: {
+        backgroundColor: '#8dd73f'
     }
 })
 
